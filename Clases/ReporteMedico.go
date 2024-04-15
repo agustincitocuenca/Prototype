@@ -34,7 +34,7 @@ func Constructor_ReporteMedico(
 }
 
 // Clonar crea y devuelve un clon del reporte medico.
-func (t *ReporteMedico) Clonar() interfaces.Reporte {
+func (t *ReporteMedico) Clonar() interfaces.IPrototype {
 	return &ReporteMedico{
 		Formato:          t.Formato,
 		Titulo:           t.Titulo,
